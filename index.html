@@ -48,7 +48,7 @@
 <body>
 <div class="container">
     <div class="row">
-        <div class="city-event col-md-6">
+        <div class="city-event col-md-6 col-sm-12">
             <div class="city-image">
              <a href="#"><img src="http://www.idaiyan.cn/source/1/tPloA8kHcyXzFJL9fCxScSjuO7SV4o1G.jpg" alt="做真正让孩子喜欢的智能硬件！"></a>
             </div>
@@ -57,7 +57,7 @@
                 <div class="city-content">美丽的城市展开了一场激烈的赛事</div>
             </div>
         </div>
-        <div class="city-event col-md-6">
+        <div class="city-event col-md-6 col-sm-12">
             <div class="city-image">
              <a href="#"> <img src="http://www.idaiyan.cn/source/1/tPloA8kHcyXzFJL9fCxScSjuO7SV4o1G.jpg" alt="做真正让孩子喜欢的智能硬件！"></a>
             </div>
@@ -66,7 +66,7 @@
                 <div class="city-content">美丽的城市展开了一场激烈的赛事</div>
             </div>
         </div>
-        <div class="city-event col-md-6">
+        <div class="city-event col-md-6 col-sm-12">
             <div class="city-image">
              <a href="#"><img src="http://www.idaiyan.cn/source/1/tPloA8kHcyXzFJL9fCxScSjuO7SV4o1G.jpg" alt="做真正让孩子喜欢的智能硬件！"></a>
             </div>
@@ -75,7 +75,7 @@
                 <div class="city-content">美丽的城市展开了一场激烈的赛事</div>
             </div>
         </div>
-        <div class="city-event col-md-6">
+        <div class="city-event col-md-6 col-sm-12">
             <div class="city-image">
              <a href="#"> <img src="http://www.idaiyan.cn/source/1/tPloA8kHcyXzFJL9fCxScSjuO7SV4o1G.jpg" alt="做真正让孩子喜欢的智能硬件！"></a>
             </div>
@@ -86,8 +86,29 @@
         </div>
     </div>
 </div>
+<ul>
+  <li>list item 1</li>
+  <li>list item 2
+    <ul>
+      <li>list item 2-a</li>
+      <li>list item 2-b</li>
+    </ul>
+  </li>
+  <li>list item 3
+    <dl>
+      <dt>list item 2-a</dt>
+      <dd>list item 2-b</dd>
+    </dl>
+  </li>
+  <li>list item 4</li>
+</ul>
 </body>
 <script type="text/javascript" src="/js/jquery-1.11.2.js"></script>
 <script type="text/javascript" src="/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(function(){
+      alert($("ul").children().length);
+    });
+</script>
 </html>
 
